@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#nav-bar{
+    position: fixed;
+    width: 100%;    
+    height: 9%;
+    top:0;
+    left:0;
+    background-color: #be3144;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+#nav-bar ul li{
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.4rem;
+    margin: 5px 40px 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    opacity: 90%;
+}
+
+.link-to{
+    text-decoration: none;
+}
+#welcome-section{
+    width:100%;
+    height:100vh;
+    background: #28282b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.title{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    font-family:cursive ;
+    color: rgb(143, 9, 9);
+}
+#projects{
+    width:100%;
+    height:100%;
+    background: #45567d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-heading{
+    color: rgb(233, 231, 231); 
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.project-tile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap:40px;
+    row-gap: 20px;
+}
+.project-tile a{
+    text-decoration: none;
+}
+img{
+    width: 400px;
+    object-fit:cover;
+    height: 400px;
+}
+.card-info{
+    background-color: #303841;
+    height: 50px;
+    margin-top: -5px;
+    font-size:1.3rem;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 100;
+    font-family: Poppins, sans-serif;
+    color: rgb(233, 231, 231);
+}
+
+button{
+    border: 0;
+    width: 150px;
+    height: 50px;
+    margin: 40px 0 100px 0;
+    background-color: #303841;
+    color: rgb(233, 231, 231);
+    font-size: 1.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.author{
+    width: 100%;
+    background-color: #303841;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer{
+    text-align: center;
+    margin-top: 300px;
+    
+}
+.coffee{
+    display: block;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    opacity: 80%;
+    font-family: Poppins, sans-serif;
+}
+.links ul{
+    display: flex;
+    gap:2em;
+    justify-content: center;
+}
+.links ul li{
+    color:#fff;
+    list-style-type:none;
+    text-decoration: none;
+    font-size:1.6rem;
+}
+hr{
+    width: 100%;
+    border-color: red;
+    margin-top: 220px;
+}
+.author-name{
+    font-size: 1.5rem;
+    font-family:'Courier New', Courier, monospace;
+    text-align: right;
+    margin-right: 10%;
+}
+
+@media screen and (max-width:400px) {
+    html{
+        font-size: 60%;
+        scroll-behavior: smooth;
+    }
+    #nav-bar{
+        position: fixed;
+        height: 3.5%;
+        width: 100%;
+        background-color: #be3144;
+    }
+    #nav-bar ul{
+        display: flex;
+        justify-content:flex-end;
+        gap: 0.5em;
+    }
+    #nav-bar ul li{
+        margin: -7px 15px 0 0;
+        font-size: .8rem;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+    justify-content: center;
+}
+.card-heading{
+    font-size:1.6rem;
+}
+img{
+    width: 175px;
+    height: 120px;
+}
+.project-tile{
+    display: grid;
+    grid-template-columns: repeat(2,180px);
+    column-gap: 7px;
+    margin: 5px;
+}
+.card-info{
+    height: 10px;
+    width: 175px;
+    font-size: .7rem;
+    margin-top: -15px;
+}
+button{
+    height: 20px;
+    width: 70px;
+    font-size: .7rem;
+}
+.links ul{
+    gap:2em;
+}
+.links ul li{
+    font-size: .8rem;
+
+}
+.footer{
+    margin-top:200px;
+}
+.author-name{
+    font-size: .8rem;
+}
+}
