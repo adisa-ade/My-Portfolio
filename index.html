@@ -8,68 +8,88 @@
     <title>Port folio</title>
 </head>
 <body>
+    <div class="container">
     <header>
-        <nav id="nav-bar">
-            <ul>
-                <a href="#" class="link-to"><li>About</li></a>
-                <a href="#" class="link-to"><li>Work</li></a>
-                <a href="#" class="link-to" id="profile-link" target="_blank"><li>Contact</li></a>
-            </ul>
-        </nav>
+        <nav id="nav-bar">            
+            <div class="toggle">
+                <img id="open" src="images/icon-hamburger.svg" alt="">
+                <img id="close" src="images/icon-close.svg" alt="">
+            </div>
+            <ul class="list">
+                <a href="#welcome-section" class="link-to"><li>About</li></a>
+                <a href="#skills" class="link-to"><li>Skills</li></a>
+                <a href="#work" class="link-to"><li>Projects</li></a>            
+                <a href="#contact" class="link-to"><li>Contact</li></a>
+                <a href="images/001Adisa.pdf" class="link-to resume"><li>Resume</li></a>
+            </ul>                        
+        </nav>    
     </header>
     <section id="welcome-section">
-        <h1 class="name">Hey, I am Adisa<span class="title">a web developer</span></h1>
+        <div class="hero">
+        <h1 class="name">Hi, I am Adisa Abubakr<span class="title">a Frontend developer from Nigeria</span></h1>
+        </div>
+        <div id ="skills" class="skills">
+            <h2>Skills:</h2>
+            <div class="skill">
+            <img src="images/icons8-html-logo-144.png" alt="">
+            <img src="images/icons8-css-logo-144.png" alt="">
+            <img src="images/icons8-javascript-144.png" alt="">
+            <img src="images/icons8-git-logo-150.png" alt="">
+            <img src="images/icons8-github-120.png" alt="">
+        </div>
+        </div>        
     </section>
     <section id="projects">
-        <h2 class="card-heading">These are some of my projects</h2>
+        <h2 id="work" class="card-heading">My Projects</h2>
         <div class="project-tile">
-        <div>
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
-        <h3 class="card-info">Tribute page</h3>
+        <div class="project">
+            <a href="https://adisa-ade.github.io/Age-Calculator/" target="https://adisa-ade.github.io/Age-Calculator/">
+            <img src="images/img1.png" alt="">
+        <h3 class="card-info">Age Calculator</h3>
         </a>
         </div>
-        <div>
-            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
-                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"alt="">
-                <h3 class="card-info">Random Quote Machine</h3></a>
+        <div class="project">
+            <a href="https://adisa-ade.github.io/EasyBank-Landing-Page/" target="https://adisa-ade.github.io/EasyBank-Landing-Page/">
+                <img src="images/img2.png"alt="">
+                <h3 class="card-info">EasyBank Landing Page</h3></a>
         </div>
-        <div>
-            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="">
-            <h3 class="card-info"> JavaScript Calculator </h3></a>
+        <div class="project">
+            <a href="https://adisa-ade.github.io/Loop-Studio/" target="https://adisa-ade.github.io/Loop-Studio/">
+            <img src="images/img3.png" alt="">
+            <h3 class="card-info">LoopStudio Landing Page</h3></a>
         </div>
-        <div> 
-            <a href="https://codepen.io/freeCodeCamp/full/mVEJag">    
-                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="">
-                <h3 class="card-info">Map Data Across the Globe</h3></a>
+        <div class="project"> 
+            <a href="https://adisa-ade.github.io/Time-Tracking-Dashboard/" target="https://adisa-ade.github.io/Time-Tracking-Dashboard/">    
+                <img src="images/img4.png" alt="">
+                <h3 class="card-info">Time Tracking Dashboard</h3></a>
         </div>
-        <div>
-            <a href="https://codepen.io/freeCodeCamp/full/wGqEga"> 
-                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="">
-                <h3 class="card-info">Wikipedia Viewer</h3></a>
+        <div class="project">
+            <a href="https://adisa-ade.github.io/Interactive-Rating-Component/" target="https://adisa-ade.github.io/Interactive-Rating-Component/"> 
+                <img src="images/img5.png" alt="">
+                <h3 class="card-info">Interactive Rating Component</h3></a>
         </div>
-        <div> 
-            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png">
-            <h3 class="card-info">Tic Tac Game</h3></a>
-            </div>
+        <div class="project"> 
+            <a href="https://adisa-ade.github.io/base--apparel/" target="https://adisa-ade.github.io/base--apparel/"> 
+            <img src="images/img6.png" alt="">
+            <h3 class="card-info">Base Apparel Newsletter</h3></a>
+            </div>      
     </div>
-    <a href="https://codepen.io/FreeCodeCamp/"><button>Show all ></button></a>
+    <a href="https://github.com/adisa-ade?tab=repositories" target="https://github.com/adisa-ade?tab=repositories"><button>Show all</button></a>
     </section>
     <footer class="author">
-        <h3 class="name footer">Let's work together...<span class="coffee">How do you take your coffee?</span></h3>
-        <div class="links">
+        <h3 class="name">Let's work together...</h3>
+        <div id="contact" class="links">
             <ul>
-                <a href="#" class="link-to"><li>Facebook</li></a>
-                <a href="#" class="link-to"><li>GitHub</li></a>
-                <a href="#" class="link-to"><li>Twitter</li></a>
-                <a href="#" class="link-to"><li>Send a mail</li></a>
-                <a href="#" class="link-to"><li>Call me</li></a>
+                <a href="https://www.linkedin.com/in/adisa-abubakr-166b36212/" class="link-to"><li>LinkedIn</li></a>
+                <a href="https://github.com/adisa-ade" class="link-to"><li>GitHub</li></a>
+                <a href="https://twitter.com/halal_codes" class="link-to"><li>Twitter</li></a>
+                <a href="mailto:abubakradisa@gmail.com" class="link-to"><li>Send me a mail</li></a>                
             </ul>
         </div>
         <hr>
-        <div class="author-name"><h4>Created by adisa-ade</h4></div>        
+        <div class="author-name"><h4>Designed by adisa-ade</h4></div>        
     </footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html> 
