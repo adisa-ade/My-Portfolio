@@ -103,7 +103,7 @@ body{
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
     60% {
         transform: translateY(-15px);
@@ -130,10 +130,13 @@ body{
     width: 90%;
     margin: 20px auto;
     background-color: #303841;
+    border-radius: 10px;
 }
+
 img{
     width: 100%;
     object-fit:contain;
+    border-radius: 10px 10px 0 0;
 }
 .card-info{
     font-size:1rem;
@@ -213,7 +216,8 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 360px);
     justify-content: center;
-    gap: 15px;
+    column-gap: 15px;
+    row-gap: 25px;
  }
  .project{
     width: 100%;
@@ -261,10 +265,15 @@ hr{
     }
     .project-tile{
         grid-template-columns: repeat(3, 400px);
+        gap: 40px;
     }  
     .links ul{
         flex-direction: row;
         justify-content: center;
         gap: 50px;
+    }
+    .project:hover{
+        transform: scale(1.1);
+        transition: 0.4s ease-in-out;
     }
 }
