@@ -14,7 +14,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 #nav-bar{
     display: flex;
@@ -40,12 +39,15 @@ body{
 #nav-bar .list{
     display: none;
 }
+#nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
 #nav-bar ul li{
     list-style: none;
     color: rgba(228, 102, 129, 0.795);
     line-height: 2;
     font-size: .9rem;
-    
     opacity: 90%;
 }
 #nav-bar .toggle{
@@ -85,7 +87,6 @@ body{
 .skills{
     margin-top: -10px;
     margin-left: 30px;
-    transition: 4s ease-out;
 }
 .skills h2{
     font-size: 2rem;
@@ -93,11 +94,11 @@ body{
 }
 .skill{
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 .skill img{
     margin-top: -15px;
-    width: 15%;
+    width: 100px;
 }
 #projects{
     width: 100%;
@@ -159,8 +160,10 @@ button{
     margin-top: -20px;
 }
 .links ul li{
+    list-style: none;
+}
+.links ul li a{
     color:#fff;
-    list-style-type:none;
     text-decoration: none;
     font-size:1.2rem;
     margin-left: -30px;
@@ -214,19 +217,19 @@ hr{
         flex-direction: row;
         height: 0;
         align-items: center;
-        gap: 40px;
+        justify-content: space-evenly;        
         background-color:#be3144 ;        
     }
-    #nav-bar ul li{
-        color: white;
+    #nav-bar ul li a{
+        color: white;        
     }
-    #nav-bar ul li:hover{
-        width: 100px;
-        border-radius: 5px;
+    #nav-bar ul li a:hover{
+        padding: 10px;
+        border-radius: 3px;
         text-align: center;
         background-color: white;
-        color: red;
-        transition: .5s ease-out;
+        color: black;        
+        transition: 0.4s ease-in;
     }
     #nav-bar .toggle{
         display: none;
@@ -238,7 +241,7 @@ hr{
         gap: 5px;
     }
     .skill img{       
-        width: 15%;
+        width: 100px;
     }
     .card-heading{
         font-size: 3.5rem;
