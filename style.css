@@ -41,7 +41,7 @@ body{
 }
 #nav-bar ul li a{
     text-decoration: none;
-    color: white;
+    color: rgba(228, 102, 129, 0.795);
 }
 #nav-bar ul li{
     list-style: none;
@@ -94,11 +94,24 @@ body{
 }
 .skill{
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: bounce 5s both infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
 .skill img{
     margin-top: -15px;
-    width: 100px;
+    width: 60px;
 }
 #projects{
     width: 100%;
@@ -238,7 +251,7 @@ hr{
         margin: 0 auto;
     }
     .skill{
-        gap: 5px;
+        gap: 7px;
     }
     .skill img{       
         width: 100px;
